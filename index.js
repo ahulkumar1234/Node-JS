@@ -2,9 +2,11 @@
 const fs = require("fs");
 const os = require("os");
 const path = require("path");
+const url = require('url');
+const EventEmitter = require('events')
 
 
-//-----------------FS MODULE SYNC CODE----------------
+// -----------------FS MODULE SYNC CODE----------------
 
 // fs.writeFileSync("read.txt","Hello World!")
 
@@ -19,7 +21,7 @@ const path = require("path");
 // fs.unlinkSync("readWrite.txt") 
 
 
-//-----------------FS MODULE ASYNC CODE----------------
+// -----------------FS MODULE ASYNC CODE----------------
 
 
 // fs.writeFile("read.txt", "Hello world!", (err) => {  // Async accept alway callback function
@@ -67,7 +69,7 @@ const path = require("path");
 
 
 
-//-----------------OS MODULE CODE----------------
+// -----------------OS MODULE CODE----------------
 
 
 // console.log(os.arch())
@@ -90,7 +92,7 @@ const path = require("path");
 // console.log(TotalMemory)
 
 
-//-----------------PATH MODULE CODE----------------
+// -----------------PATH MODULE CODE----------------
 
 // console.log(path.dirname("C:\Users\dell\Desktop\Node-Js/index.js"))
 
@@ -101,3 +103,48 @@ const path = require("path");
 // console.log(path.parse("C:\Users\dell\Desktop\Node-Js/index.js").name)
 
 
+
+// -----------------URL MODULE CODE----------------
+
+// const address = "http://localhost:3000/about/5?name=XYZ&id=1";
+
+// let parsedURL = url.parse(address,true);
+
+// console.log(parsedURL.href)
+
+// console.log(parsedURL.host)
+
+// console.log(parsedURL.hostname)
+
+// console.log(parsedURL.pathname)
+
+// console.log(parsedURL.port)
+
+// console.log(parsedURL.query)
+
+
+// -----------------URL MODULE CODE----------------
+
+// event module class provide karta hai isko use karne ke hume phle obj mai convert karna padta hai baki module object provide karta hai
+// const event = new EventEmitter();
+
+// event.on("greet", () => {
+//     console.log("Hello Everyone");
+// });
+
+// event.emit("greet");
+
+
+// -----------------STREAM CODE----------------
+
+// It is not a module In Node.js, streams are an abstract interface for handling streaming data
+
+// const MyStream = fs.createReadStream("read.txt",'utf-8');
+// const MyWriteStream = fs.createWriteStream("Write.txt")
+
+// MyStream.on("data", (chunks) => {
+//     console.log('Chunk Received!!')
+//     MyWriteStream.write(chunks)
+// });
+
+// MyStream.emit("data");
