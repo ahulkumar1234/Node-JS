@@ -1,0 +1,114 @@
+[
+  {
+    "type": "user",
+    "id": 1,
+    "name": "Rahul Kumar",
+    "email": "rahulkumar@example.com",
+    "age": 25,
+    "phone": "8340527941",
+    "address": {
+      "city": "Jamshedpur",
+      "state": "Jharkhand",
+      "country": "India"
+    }
+  },
+  {
+    "type": "user",
+    "id": 2,
+    "name": "Priya Singh",
+    "email": "priyasingh@example.com",
+    "age": 23,
+    "phone": "9876543210",
+    "address": {
+      "city": "Patna",
+      "state": "Bihar",
+      "country": "India"
+    }
+  },
+  {
+    "type": "user",
+    "id": 3,
+    "name": "Aman Verma",
+    "email": "amanverma@example.com",
+    "age": 27,
+    "phone": "9123456780",
+    "address": {
+      "city": "Ranchi",
+      "state": "Jharkhand",
+      "country": "India"
+    }
+  },
+  {
+    "type": "product",
+    "id": 101,
+    "name": "Wireless Headphones",
+    "brand": "Boat",
+    "price": 2999,
+    "inStock": true,
+    "rating": 4.5,
+    "category": "Electronics"
+  },
+  {
+    "type": "product",
+    "id": 102,
+    "name": "T-Shirt",
+    "brand": "Puma",
+    "price": 499,
+    "inStock": true,
+    "rating": 4.2,
+    "category": "Clothing"
+  },
+  {
+    "type": "product",
+    "id": 103,
+    "name": "Smart Watch",
+    "brand": "Noise",
+    "price": 1499,
+    "inStock": false,
+    "rating": 4.0,
+    "category": "Accessories"
+  },
+  {
+    "type": "blog",
+    "id": 1,
+    "title": "Getting Started with JavaScript",
+    "author": "Rahul Kumar",
+    "date": "2025-11-05",
+    "tags": ["javascript", "webdev"],
+    "likes": 150
+  },
+  {
+    "type": "blog",
+    "id": 2,
+    "title": "Learn PHP with MySQL",
+    "author": "Rahul Kumar",
+    "date": "2025-10-22",
+    "tags": ["php", "backend"],
+    "likes": 120
+  },
+  {
+    "type": "blog",
+    "id": 3,
+    "title": "Frontend vs Backend Development",
+    "author": "Priya Singh",
+    "date": "2025-09-15",
+    "tags": ["frontend", "backend", "career"],
+    "likes": 180
+  },
+  {
+    "type": "order",
+    "orderId": 5001,
+    "userId": 1,
+    "products": [101, 103],
+    "totalAmount": 4498,
+    "status": "Delivered"
+  },
+  {
+    "type": "order",
+    "orderId": 5002,
+    "userId": 2,
+    "products": [102],
+    "totalAmount": 499,
+    "status": "Pending"
+  }
+]
